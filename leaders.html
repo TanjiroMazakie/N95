@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Members Page</title>
+    <title>Leaders Page</title>
     <style>
         body {
-            background-color: #1E90FF; /* DodgerBlue background */
+            background-color: blue; /* Set the background to blue */
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
             font-family: Arial, sans-serif; /* Set font family */
@@ -61,38 +61,47 @@
             width: 16px; /* Set icon width */
             height: 16px; /* Set icon height */
         }
-        table {
-            width: 80%;
-            margin: 50px auto;
+        .content {
+            padding: 20px;
+            color: white;
+        }
+        .content h1 {
+            font-size: 32px; /* Make the text big */
+            margin: 0 0 20px 0; /* Margin for spacing */
+        }
+        .content p {
+            font-size: 18px;
+            margin: 0 0 10px 0; /* Margin for spacing */
+        }
+        .content table {
+            width: 100%;
             border-collapse: collapse;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add shadow to the table */
-            background-color: white; /* Set background color for the table */
-            border-radius: 8px; /* Add rounded corners to the table */
         }
-        th {
-            background-color: #4CAF50; /* Green background for headers */
-            color: white; /* White text for headers */
-            padding: 12px;
-            text-align: center;
-        }
-        td {
-            padding: 10px;
+        .content th, .content td {
+            border: 1px solid white;
+            padding: 8px;
             text-align: left;
         }
-        tr:nth-child(even) {
-            background-color: #f2f2f2; /* Zebra stripe effect */
+        .content th {
+            background-color: #005cbf; /* Blue background for table header */
         }
-        tr:hover {
-            background-color: #ddd; /* Hover effect */
+        .content td {
+            background-color: blue; /* Same color as background */
+            color: white;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
+        .content a {
+            color: white;
+            text-decoration: none;
         }
-        a {
-            color: inherit; /* Inherit text color */
-            text-decoration: none; /* Remove underline from links */
-            display: block; /* Make the entire cell clickable */
+        .info-big {
+            font-size: 24px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .info-steps {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -104,67 +113,71 @@
                 <input type="text" placeholder="Search...">
                 <img src="search-icon.png" alt="Search Icon">
             </div>
-            <div class="nav-item active"><a href="#">Members</a></div>
+            <div class="nav-item"><a href="members.html">Members</a></div>
             <div class="nav-item"><a href="group.html">Group</a></div>
-            <div class="nav-item"><a href="link.html">Link</a></div>
             <div class="nav-item"><a href="help.html">Help</a></div>
+            <div class="nav-item"><a href="guide.html">Guide</a></div>
             <div class="nav-item"><a href="tuition.html">Tuition</a></div>
             <div class="nav-item"><a href="polls.html">Polls</a></div>
-            <div class="nav-item"><a href="leaders.html">Leaders</a></div>
+            <div class="nav-item active"><a href="leaders.html">Leaders</a></div>
         </div>
     </div>
 
-    <!-- Inserted Table -->
-    <table>
-        <tr>
-            <th>S No.</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Date of Birth</th>
-            <th>Profession</th>
-        </tr>
-        <tr>
-            <td><a href="aarav.html">1</a></td>
-            <td><a href="aarav.html">Aarav Pastor</a></td>
-            <td><a href="aarav.html">11</a></td>
-            <td><a href="aarav.html">17 January 2013</a></td>
-            <td><a href="aarav.html">Cricket and Football</a></td>
-        </tr>
-        <tr>
-            <td><a href="arsh.html">2</a></td>
-            <td><a href="arsh.html">Arsh Singh</a></td>
-            <td><a href="arsh.html">11</a></td>
-            <td><a href="arsh.html">2 August 2013</a></td>
-            <td><a href="arsh.html">Cricket and Football</td>
-        </tr>
-        <tr>
-            <td><a href="arshaan.html">3</a></td>
-            <td><a href="arshaan.html">Arshaan Akhtar</a></td>
-            <td><a href="arshaan.html">12</a></td>
-            <td><a href="arshaan.html"></a></td>
-            <td><a href="arshaan.html">Football only</a></td>
-        </tr>
-        <tr>
-            <td><a href="shreyash.html">4</a></td>
-            <td><a href="shreyash.html">Shreyash Shukla</a></td>
-            <td><a href="shreyash.html">12</a></td>
-            <td><a href="shreyash.html">3 April 2012</a></td>
-            <td><a href="shreyash.html">Cricket and Football</a></td>
-        </tr>
-        <tr>
-            <td><a href="akshit.html">5</a></td>
-            <td><a href="akshit.html">Akshit Shukla</a></td>
-            <td><a href="akshit.html">10</a></td>
-            <td><a href="akshit.html">14 October 2014</a></td>
-            <td><a href="akshit.html">Cricket and Football</a></td>
-        </tr>
-        <tr>
-            <td><a href="earth.html">6</a></td>
-            <td><a href="earth.html">Earth Ahuja</a></td>
-            <td><a href="earth.html">11</a></td>
-            <td><a href="earth.html">19 November 2013</a></td>
-            <td><a href="earth.html">Cricket and Football</a></td>
-        </tr>
-        <tr>
-            <td><a href="neerav.html">7</a></td>
-            <td><a href="neerav
+    <!-- Main content of the Leaders page -->
+    <div class="content">
+        <h1>Leaders</h1>
+        <table id="leadersTable">
+            <thead>
+                <tr>
+                    <th>S No.</th>
+                    <th>Community Admin</th>
+                    <th>Choosing Type</th>
+                    <th>Date of Registration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="aarav.html" target="_blank">Aarav Pastor</a></td>
+                    <td>Creation</td>
+                    <td>17 January 2021</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="earth.html" target="_blank">Earth Ahuja</a></td>
+                    <td>Voting</td>
+                    <td>4 November 2023</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="neerav.html" target="_blank">Neerav Kumar</a></td>
+                    <td>Creation</td>
+                    <td>7 January 2024</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="arshaan.html" target="_blank">Arshaan Akhtar</a></td>
+                    <td>Football Management</td>
+                    <td>27 August 2024</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="darsh.html" target="_blank">Darsh Srivastava</a></td>
+                    <td>Voting</td>
+                    <td>25 September 2024</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="info-big">If you also want to be a community admin, contact one of the admins on this table or contact 8736883934.</p>
+
+        <p class="info-steps">Steps to become a community admin:</p>
+        <ol class="info-steps">
+            <li>There will be voting</li>
+            <li>If you pass the voting, we will ask some questions</li>
+            <li>Then Community Admins will discuss together and make you an admin</li>
+            <li>Enjoy :)</li>
+        </ol>
+    </div>
+</body>
+</html>
